@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Værdier - Berta Bageri</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #1a365d;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            color: #1a365d;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        .nav-links a.active {
+            text-decoration: underline;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            color: #1a365d;
+            text-decoration: none;
+        }
+
+        /* Header */
+        .page-title {
+            font-size: 3rem;
+            color: #1a365d;
+            margin: 50px 0;
+            position: relative;
+        }
+
+        .page-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 200px;
+            height: 2px;
+            background-color: #1a365d;
+        }
+
+        /* Content Sections */
+        .content-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 80px;
+            align-items: start;
+        }
+
+        .content-section.reverse {
+            direction: rtl;
+        }
+
+        .content-section.reverse > * {
+            direction: ltr;
+        }
+
+        .text-content {
+            padding: 20px;
+        }
+
+        .text-content h2 {
+            color: #1a365d;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        .text-content p {
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .image-grid img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .illustration {
+            max-width: 150px;
+            margin: 20px 0;
+        }
+
+        .single-image img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Footer Decoration */
+        .footer-decoration {
+            text-align: center;
+            margin: 50px 0;
+        }
+
+        .footer-decoration img {
+            max-width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-links">
+            <a href="index.html">Bagværk</a>
+            <a href="om-os.html">Om os</a>
+            <a href="vaerdier.html" class="active">Værdier</a>
+            <a href="kontakt.html">Kontakt</a>
+        </div>
+        <a href="index.html" class="logo">berta</a>
+    </nav>
+
+    <h1 class="page-title">Værdier</h1>
+
+    <section class="content-section">
+        <div class="image-grid">
+            <img src="/placeholder.svg?height=250&width=250" alt="Person i have 1">
+            <img src="/placeholder.svg?height=250&width=250" alt="Person i have 2">
+            <img src="/placeholder.svg?height=250&width=250" alt="Illustration af hund">
+            <img src="/placeholder.svg?height=250&width=250" alt="Personer arbejder i haven">
+        </div>
+        <div class="text-content">
+            <h2>Bæredygtighed</h2>
+            <p>Hos Berta Bageri er bæredygtighed en naturlig del af det brød vi ger. Vi bruger økologiske råvarer fra lokale producenter og samarbejder med producenter for at minimere vores klimaaftryk.</p>
+            <p>Vores emballage og bagværk er lavet med omtanke for miljøet, og vi stræber efter at lave dit brød med god samvittighed. Vi tror på, at ved bæredygtige valg skaber en stor forskel - én bid af gangen.</p>
+            <img src="/placeholder.svg?height=50&width=50" alt="Illustration af korn" class="illustration">
+        </div>
+    </section>
+
+    <section class="content-section reverse">
+        <div class="text-content">
+            <h2>Økologi</h2>
+            <p>Hos Berta bager vi surdejsbrød og kager med fokus på kvalitet og bæredygtighed. Økologien er vores fundament, og vi samarbejder med lokale økologiske producenter, hvilket sikrer friskhed i hver bid gennem en gennemtænkte varer.</p>
+            <p>Vi tror på maden kan forbedre ligeværdien mellem vores samfund og den verden, vi er en del af.</p>
+            <img src="/placeholder.svg?height=50&width=50" alt="Illustration af indkøbspose" class="illustration">
+        </div>
+        <div class="single-image">
+            <img src="/placeholder.svg?height=300&width=300" alt="Økologiske æg">
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="image-grid">
+            <img src="/placeholder.svg?height=250&width=250" alt="Mel pose 1">
+            <img src="/placeholder.svg?height=250&width=250" alt="Mel pose 2">
+        </div>
+        <div class="text-content">
+            <h2>Lokale råvarer</h2>
+            <p>Hos Berta Bageri bruger vi kun lokale, danske råvarer for at sikre den bedste kvalitet og smag. Vores mel kommer fra danske møller og er 100% økologisk mel fra danske Møller, og vores kager laves med friske ingredienser fra små danske producenter. Vi tror på at bagværk smager mest lokalt og godt, mens bæredygtig og de lokale råvarer, vi bruger.</p>
+            <img src="/placeholder.svg?height=50&width=50" alt="Illustration af brød" class="illustration">
+        </div>
+    </section>
+
+    <section class="content-section reverse">
+        <div class="text-content">
+            <h2>Tæt på råvarerne</h2>
+            <p>Vores Mellegelske brødment, drevet på markerne ved Trige Vestermølle og mødt på strækerne af St. Bonifatius. Navnet som ikke sigter på forbindelsen mellem mennesker og mad, men også på den måde vi vælger mel af højeste kvalitet. Vi får vores fantastiske surdejskultur fra Herning, der drives en lille familiedrevet mølle, hvor kornet kommer fra Vores Have på Samsø, hvor børnene dyrkes med kærlighed.</p>
+            <p>Hvert eneste bagværk er nøje udvalgt for at sikre vores kvalitet og bæredygtighed i alt, vi laver.</p>
+        </div>
+        <div class="single-image">
+            <img src="/placeholder.svg?height=300&width=300" alt="Bageri udstyr">
+        </div>
+    </section>
+
+    <div class="footer-decoration">
+        <img src="/placeholder.svg?height=100&width=400" alt="Illustration af blomster og hund">
+    </div>
+</body>
+</html>
