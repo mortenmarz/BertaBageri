@@ -210,10 +210,10 @@ body {
 
 .bread-section-left {
     width: 100%;
-    padding-top: 10px;  
-    padding-left: 10%;  /* Ensure both title and description have the same padding */
+    padding-top: 20px;  
+    padding-left: 11%;  /* Ensure both title and description have the same padding */
     text-align: left;
-    margin-top: -20px;  
+    margin-top: -70px;  
 }
 
 .bread-section-left .bread-title {
@@ -260,8 +260,7 @@ body {
     display: flex;
     align-items: flex-start;  
     justify-content: flex-start;  /* Align items to the left */
-
-    margin-top: 80px;  
+    margin-top: 200px;  
     max-width: 1024px;  
     width: 100%;  
 }
@@ -275,7 +274,7 @@ body {
 }
 
 .small-image {
-    width: 300px;  /* Set a small width for the left image */
+    width: 350px;  /* Set a small width for the left image */
     height: auto;  /* Maintain aspect ratio */
 }
 
