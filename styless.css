@@ -102,11 +102,12 @@ body {
 
 .bread-description {
     font-family: var(--font-body);
-    font-size: 16px;
+    font-size: 14px;
     margin-top: 10px;
     color: var(--text-color);
     letter-spacing: 0.1em;
     line-height: 25px;
+    max-width: 400px;
 }
 
 .prisbroed {
@@ -165,5 +166,69 @@ body {
     color: var(--text-color);
     letter-spacing: 0.1em;
     line-height: 25px;
-    padding-left: 40%;
+    padding-left: 10%;
+    max-width: 450px;
+    margin-left: auto;
+}
+
+.prisbroed1 {
+    font-family: var(--font-body);
+    font-size: 16px;
+    margin-top: 30px;
+    font-weight: 500;
+    color: var(--primary-color);
+    letter-spacing: 0.1em;  
+    line-height: 25px;
+}
+
+.uneven-images {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    width: 100%;
+    padding: 40px 20px;
+}
+
+.left-uneven {
+    flex: none;
+    margin-top: -40px;
+    width: 35%;
+    margin-right: 50px;
+}
+
+.right-uneven {
+    flex: none;
+    margin-top: 80px;
+    width: 35%;
+}
+
+.left-uneven img, .right-uneven img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.bread-section-left {
+    width: 100%;
+    padding-top: 10px;
+    padding-left: 11%;
+    text-align: left;
+    margin-top: -100px;
+}
+
+.bread-section-left .bread-title {
+    font-family: var(--font-heading);
+    font-size: 48px;
+    font-weight: 400;
+    color: var(--primary-color);
+}
+
+.bread-section-left .bread-description {
+    font-family: var(--font-body);
+    font-size: 14px;
+    margin-top: 10px;
+    color: var(--text-color);
+    letter-spacing: 0.1em;
+    line-height: 25px;
+    max-width: 400px;
 }
