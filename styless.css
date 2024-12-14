@@ -1,0 +1,169 @@
+:root {
+    --primary-color: #31498F;
+    --background-color: #FFFDF2;
+    --text-color: #000000;
+    --font-heading: 'Caveat', Helvetica;
+    --font-body: 'Lato', Helvetica;
+}
+
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.hero-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero-title {
+    font-family: var(--font-heading);
+    font-weight: 400;
+    font-size: 93px;
+    letter-spacing: 18.60px;
+    line-height: 139.5px;
+    color: var(--primary-color);
+    text-align: center;
+    white-space: nowrap;
+}
+
+.hero-small-image {
+    width: 150px;
+    height: auto;
+    order: -1; /* This will move the image to the start */
+}
+.hero-description {
+    width: 650px;
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: 3.60px;
+    line-height: 35px;
+    color: var(--text-color);
+    margin-top: 80px;
+}
+
+.image-duo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 250px;
+    padding-top: 100px;
+    gap: 80px;
+}
+
+.left-image {
+    flex: 1;
+  
+}
+
+.right-image {
+    flex: 2;
+}
+
+.left-image img, .right-image img {
+    width: 80%;
+    height: auto;
+}
+
+.bread-section {
+    width: 100%;
+    padding-top: 40px;
+    padding-left: 10%;
+    text-align: left;
+}
+
+.bread-title {
+    font-family: var(--font-heading);
+    font-size: 48px;
+    font-weight: 100;
+    color: var(--primary-color);
+}
+
+.bread-description {
+    font-family: var(--font-body);
+    font-size: 16px;
+    margin-top: 10px;
+    color: var(--text-color);
+    letter-spacing: 0.1em;
+    line-height: 25px;
+}
+
+.prisbroed {
+    font-family: var(--font-body);
+    font-size: 16px;
+    margin-top: 30px;
+    font-weight: 500;
+    color: var(--primary-color);
+    letter-spacing: 0.1em;
+    line-height: 25px;
+}
+
+.triple-image {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 60px 20px;
+    width: 100%;
+}
+
+.image-container {
+    flex: 1;
+    max-width: 400px;
+}
+
+.image-container:last-child {
+    margin-top: -185px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.bread-section-right {
+    width: 100%;
+    padding-top: 2px;
+    padding-right: 20%;
+    text-align: right;
+    margin-top: -120px;
+}
+
+/* These styles will be inherited from the original bread-section classes */
+.bread-section-right .bread-title {
+    font-family: var(--font-heading);
+    font-size: 48px;
+    font-weight: 400;
+    color: var(--primary-color);
+}
+
+.bread-section-right .bread-description {
+    font-family: var(--font-body);
+    font-size: 14px;
+    margin-top: 10px;
+    color: var(--text-color);
+    letter-spacing: 0.1em;
+    line-height: 25px;
+    padding-left: 40%;
+}
