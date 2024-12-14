@@ -210,10 +210,10 @@ body {
 
 .bread-section-left {
     width: 100%;
-    padding-top: 10px;
-    padding-left: 11%;
+    padding-top: 10px;  
+    padding-left: 10%;  /* Ensure both title and description have the same padding */
     text-align: left;
-    margin-top: -100px;
+    margin-top: -20px;  
 }
 
 .bread-section-left .bread-title {
@@ -221,6 +221,7 @@ body {
     font-size: 48px;
     font-weight: 400;
     color: var(--primary-color);
+    margin-left: 0;  /* Ensure no additional margin is pushing it */
 }
 
 .bread-section-left .bread-description {
@@ -231,4 +232,85 @@ body {
     letter-spacing: 0.1em;
     line-height: 25px;
     max-width: 400px;
+    margin-left: 10px;  /* Added this to move the text slightly to the right */
+}
+
+.prisbroed1 {
+    font-family: var(--font-body);
+    font-size: 16px;
+    margin-top: 30px;
+    font-weight: 500;
+    color: var(--primary-color);
+    letter-spacing: 0.1em;
+    line-height: 25px;
+    margin-left: 10px;
+}
+
+
+
+.line-image {
+    width: 50%;
+    text-align: center;  /* Center the image */
+    padding: 20px 0;    /* Add some vertical padding */
+    padding-top: 150px;
+}
+
+
+.new-section {
+    display: flex;
+    align-items: flex-start;  
+    justify-content: flex-start;  /* Align items to the left */
+
+    margin-top: 80px;  
+    max-width: 1024px;  
+    width: 100%;  
+}
+
+.left-image-container {
+    flex: 0;  
+    text-align: left;  
+    padding-right: 20px;  
+    max-width: 300px;  
+    margin-left: -20px;  /* Added negative margin to move the text more to the left */
+}
+
+.small-image {
+    width: 300px;  /* Set a small width for the left image */
+    height: auto;  /* Maintain aspect ratio */
+}
+
+.middle-images {
+    display: flex;
+    justify-content: center;
+    gap: 50px;  
+    margin-left: 150px;  /* Added margin-left to move the middle images to the right */
+}
+
+.middle-image-left {
+    height: 500px;  /* Set a fixed height for the left middle image */
+    object-fit: cover;  
+    max-width: 600px;  
+}
+
+.middle-image-right {
+    height: 698px;  /* Set a fixed height for the right middle image */
+    object-fit: cover;  
+    max-width: 450px;  
+}
+
+.text-left {
+    margin-left: -180px;  /* Adjust this value to move the text further left */
+}
+
+
+.bread-description2 {
+    font-family: var(--font-body);
+    font-size: 14px;
+    margin-top: 10px;
+    color: var(--text-color);
+    letter-spacing: 0.1em;
+    line-height: 25px;
+    max-width: 600px;  /* Increased max-width to allow for longer text */
+    margin-left: 10px;
+
 }
