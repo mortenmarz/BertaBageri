@@ -1,0 +1,154 @@
+/* Værdier css */
+
+:root {
+    --blå: #31498F; /* Definerer farvevariablen for blå */
+    --bertahvid: #FFFDF2; /* Definerer farvevariablen for bertahvid */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bertahvid);
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #1a365d;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+/* Content Sections */
+
+
+.content-section.reverse {
+    direction: rtl;
+}
+
+.content-section.reverse > * {
+    direction: ltr;
+}
+
+.text-content {
+    padding: 20px;
+}
+
+.text-content h2 {
+    color: var(--blå);
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.text-content p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.image-grid img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.illustration {
+    max-width: 150px;
+    margin: 20px 0;
+}
+
+.single-image img {
+    width: 100%;
+    height: auto;
+}
+
+/* Footer Decoration */
+.footer-decoration {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.footer-decoration img {
+    max-width: 400px;
+}
+
+h1, h2 {
+    font-family: 'Caveat', cursive; /* Anvender Caveat skrifttypen */
+    font-size: 36px; /* Juster størrelsen efter behov */
+    margin: 20px 0; /* Juster marginen for at give plads omkring overskriften */
+    color: var(--blå); /* Juster farven, hvis nødvendigt */
+    letter-spacing: 0.2em;
+}
+
+h1 {
+    text-align: center; /* Centrerer teksten horisontalt */
+    margin: 0; /* Ingen margin for h1 for at bringe det tættere på divider */
+    font-family: 'Caveat', cursive; /* Anvender Caveat skrifttypen */
+    font-size: 54px; /* Juster størrelsen efter behov */
+    color: var(--blå); /* Juster farven, hvis nødvendigt */
+    font-weight: 400;
+}
+
+.divider {
+    display: block; /* Gør billedet til en blok for at sikre, at det står alene */
+    margin: 0px auto; /* Reducer marginen for at bringe billedet tættere på h1 */
+    width: 30%; /* Juster bredden efter behov */
+    max-width: 600px; /* Sætter en maksimal bredde for billedet */
+}
+
+.title-container {
+    text-align: center; /* Centrerer indholdet */
+    margin: 50px 0 100px; /* Ingen margin foroven, 20px nedenunder for afstand til content-section */
+}
+
+.biodiversity-image {
+    float: left; /* Placerer billedet til venstre */
+    margin-right: 80px; /* Tilføjer afstand til højre for at give plads til teksten */
+    width: 500px; /* Juster bredden for at gøre billedet større */
+    height: auto; /* Bevarer proportionerne */
+}
+
+.biodiversity-image-2 {
+    display: block; /* Gør billedet til en blok for at sikre, at det står alene */
+    margin-left: 120px;
+    position: relative;
+    top: -140px;
+    width: 75%;
+}
+
+.value-section p {
+    max-width: 900px; /* Juster denne værdi for at ændre linjelængden */
+    margin: 0 auto; /* Centrerer teksten, hvis der er plads */
+    line-height: 1.8; 
+    font-size: 16px;
+}
