@@ -98,6 +98,8 @@ body {
     font-size: 48px;
     font-weight: 100;
     color: var(--primary-color);
+    
+    
 }
 
 .bread-description {
@@ -171,15 +173,7 @@ body {
     margin-left: auto;
 }
 
-.prisbroed1 {
-    font-family: var(--font-body);
-    font-size: 16px;
-    margin-top: 30px;
-    font-weight: 500;
-    color: var(--primary-color);
-    letter-spacing: 0.1em;  
-    line-height: 25px;
-}
+
 
 .uneven-images {
     display: flex;
@@ -274,8 +268,9 @@ body {
 }
 
 .small-image {
-    width: 350px;  /* Set a small width for the left image */
+    width: 300px;  /* Set a small width for the left image */
     height: auto;  /* Maintain aspect ratio */
+    margin-left: 80px;
 }
 
 .middle-images {
@@ -302,6 +297,20 @@ body {
 }
 
 
+
+/* Croissant */
+
+.bread-title1 {
+    font-family: var(--font-heading);
+    font-size: 48px;
+    font-weight: 100;
+    color: var(--primary-color);
+    margin-left: 100px;
+    margin-top: 5px;
+    
+    
+}
+
 .bread-description2 {
     font-family: var(--font-body);
     font-size: 14px;
@@ -310,9 +319,23 @@ body {
     letter-spacing: 0.1em;
     line-height: 25px;
     max-width: 600px;  /* Increased max-width to allow for longer text */
-    margin-left: 10px;
+    margin-left: 105px;
 
 }
+
+.prisbroed2 {
+    font-family: var(--font-body);
+    font-size: 16px;
+    margin-top: 30px;
+    font-weight: 500;
+    color: var(--primary-color);
+    letter-spacing: 0.1em;  
+    line-height: 25px;
+    margin-left: 104px;
+}
+
+
+
 
 .new-image-text-section {
     display: flex;
@@ -343,12 +366,46 @@ body {
     font-family: var(--font-heading);
     font-size: 48px;  /* Set to match the size of other h2 elements */
     color: var(--primary-color);
+    font-weight: 400;
 }
 
 .section-description {
     font-family: var(--font-body);
-    font-size: 14px;  
+    font-size: 14px;
+    margin-top: 10px;
     color: var(--text-color);
+    letter-spacing: 0.1em;
+    line-height: 25px;
     margin-top: 10px;  
+    max-width: 300px; 
+    padding-left: 7px; /* Set a max-width to control the line length */
+}
+
+
+
+
+.new-image-text-section .croissant-image {
+    width: 150%; /* Increase size by 15% */
+}
+
+.new-image-text-section {
+    display: flex; /* Use flexbox to align items horizontally */
+    align-items: flex-start; /* Align items to the start */
+}
+
+.croissant-image {
+    width: 115%; /* Keep the image size at 15% larger */
+    margin-right: 20px; /* Add a gap between the image and the text */
+}
+
+.text-container {
+    margin-left: 150px; /* Optional: Add a small margin to the left of the text */
+}
+
+.small-image1 {
+    width: 250px; /* Set the desired width for the small image */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 100px; /* Add some space above the small image */
+    margin-left: 100px;
 }
 
