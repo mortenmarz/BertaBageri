@@ -82,6 +82,7 @@ body {
 
 .navbar-item a:hover {
     text-decoration: none; 
+    font-weight: 600;
 }
 
 .navbar-right {
@@ -93,14 +94,6 @@ body {
     height: 50px; 
     width: auto; 
 }
-
-
-
-
-
-
-
-
 
 /* Hero Section */
 .hero {
@@ -131,7 +124,7 @@ body {
 .hero-small-image {
     width: 150px;
     height: auto;
-    order: -1; /* This will move the image to the start */
+    order: -1; 
 }
 .hero-description {
     width: 650px;
@@ -234,7 +227,7 @@ body {
     margin-top: -120px;
 }
 
-/* These styles will be inherited from the original bread-section classes */
+
 .bread-section-right .bread-title {
     font-family: var(--font-heading);
     font-size: 48px;
@@ -286,7 +279,7 @@ body {
 .bread-section-left {
     width: 100%;
     padding-top: 20px;  
-    padding-left: 11%;  /* Ensure both title and description have the same padding */
+    padding-left: 11%;  
     text-align: left;
     margin-top: -70px;  
 }
@@ -296,7 +289,7 @@ body {
     font-size: 48px;
     font-weight: 400;
     color: var(--primary-color);
-    margin-left: 0;  /* Ensure no additional margin is pushing it */
+    margin-left: 0;  
 }
 
 .bread-section-left .bread-description {
@@ -307,7 +300,7 @@ body {
     letter-spacing: 0.1em;
     line-height: 25px;
     max-width: 400px;
-    margin-left: 10px;  /* Added this to move the text slightly to the right */
+    margin-left: 10px;  
 }
 
 .prisbroed1 {
@@ -325,8 +318,8 @@ body {
 
 .line-image {
     width: 50%;
-    text-align: center;  /* Center the image */
-    padding: 20px 0;    /* Add some vertical padding */
+    text-align: center;  
+    padding: 20px 0;    
     padding-top: 150px;
 }
 
@@ -334,7 +327,7 @@ body {
 .new-section {
     display: flex;
     align-items: flex-start;  
-    justify-content: flex-start;  /* Align items to the left */
+    justify-content: flex-start;  
     margin-top: 200px;  
     max-width: 1024px;  
     width: 100%;  
@@ -345,7 +338,7 @@ body {
     text-align: left;  
     padding-right: 20px;  
     max-width: 300px;  
-    margin-left: -20px;  /* Added negative margin to move the text more to the left */
+    margin-left: -20px;  
 }
 
 
@@ -353,23 +346,23 @@ body {
     display: flex;
     justify-content: center;
     gap: 50px;  
-    margin-left: 150px;  /* Added margin-left to move the middle images to the right */
+    margin-left: 150px;  
 }
 
 .middle-image-left {
-    height: 500px;  /* Set a fixed height for the left middle image */
+    height: 500px; 
     object-fit: cover;  
     max-width: 600px;  
 }
 
 .middle-image-right {
-    height: 698px;  /* Set a fixed height for the right middle image */
+    height: 698px;  
     object-fit: cover;  
     max-width: 450px;  
 }
 
 .text-left {
-    margin-left: -180px;  /* Adjust this value to move the text further left */
+    margin-left: -180px;  
 }
 
 
