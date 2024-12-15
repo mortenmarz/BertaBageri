@@ -22,11 +22,92 @@ body {
 }
 
 
+/* Navbar */
+
+.navbar {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px 20px; 
+    background-color: transparent; 
+    width: 100%; 
+    position: relative; 
+    margin-top: 20px; 
+}
+
+.navbar-left {
+    display: flex; 
+}
+
+.navbar-menu {
+    list-style: none; 
+    display: flex; 
+    margin: 0; 
+    padding: 0; 
+    position: relative; 
+}
+
+.navbar-item {
+    margin-right: 100px; 
+    position: relative; 
+}
+
+.navbar-item a {
+    color: var(--primary-color); 
+    text-decoration: none; 
+    font-size: 36px; 
+    font-family: var(--font-heading); 
+    font-weight: 100; 
+}
+
+.nav-item::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 200px; 
+    height: 220px; 
+    background-image: url('/images/Frame 5.png'); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.3s ease;
+    pointer-events: none; 
+}
+
+.nav-item:hover::before {
+    transform: translate(-50%, -50%) scale(1); 
+}
+
+.navbar-item a:hover {
+    text-decoration: none; 
+}
+
+.navbar-right {
+    margin-left: auto; 
+    display: flex; 
+}
+
+.navbar-logo {
+    height: 50px; 
+    width: auto; 
+}
+
+
+
+
+
+
+
+
+
 /* Hero Section */
 .hero {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 80px;
     margin-bottom: 40px;
 }
 
@@ -56,9 +137,9 @@ body {
     width: 650px;
     font-family: var(--font-body);
     font-weight: 400;
-    font-size: 24px;
-    letter-spacing: 3.60px;
-    line-height: 35px;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    line-height: 25px;
     color: var(--text-color);
     margin-top: 80px;
 }
@@ -343,7 +424,7 @@ body {
     display: flex;
     align-items: flex-start;  
     padding: 40px 20px;  
-    margin-top: 30px;  
+    margin-top: 5%;  
     flex-wrap: wrap;  
 }
 
@@ -496,4 +577,20 @@ body {
     margin-left: 70px; 
 
 }
+
+/* bagefad */
+.small-image-section {
+    margin-top: 10%; 
+    text-align: center; 
+    padding: 20px 0; 
+}
+
+.centered-small-image {
+    width: 200px; 
+    height: auto; 
+}
+
+/* kardemomme snurre */
+
+
 
