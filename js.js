@@ -15,20 +15,26 @@ window.addEventListener('scroll', function() {
 
 /* Knappen til top */ 
 
-var btn = document.getElementById("topBtn");
+const scrollToTopBtn = document.getElementById('scrollToTopBtn');
 
 window.onscroll = function() {
-  // Check if user has scrolled past about 50% of the page height
-  if (window.scrollY > document.documentElement.scrollHeight * 0.5) {
-    btn.style.display = "block";
-  } else {
-    btn.style.display = "none";
-  }
+    const scrollPosition = window.scrollY + window.innerHeight;
+    const documentHeight = document.documentElement.scrollHeight; 
+
+    
+    if (scrollPosition > documentHeight * 0.6) {
+        scrollToTopBtn.style.display = 'block'; 
+    } else {
+        scrollToTopBtn.style.display = 'none'; 
+    }
 };
 
-btn.onclick = function() {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  });
+scrollToTopBtn.onclick = function(event) {
+    event.preventDefault(); 
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' 
+    });
 };
+
+scrollToTopBtn.style.display = 'none';
