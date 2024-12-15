@@ -587,3 +587,79 @@ body {
 
 
 
+
+
+
+/* footer */
+
+footer {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: rgba(239, 243, 255, 0.4);
+    margin-top: 140px;
+    font-family: 'Caveat', cursive;
+    font-size: 24px;
+    font-weight: 300;
+    width: 100%;
+    line-height: 1.6;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    text-align: left;
+}
+
+footer h3 {
+    letter-spacing: 0.05em;
+}
+
+.contact-title {
+    text-align: center; /* Centerer titlen */
+}
+
+.follow-title {
+    text-align: center; /* Centerer titlen */
+}
+
+.contact-icon {
+    width: 120px; /* Fast bredde for ikoner */
+    height: auto; /* Bevarer proportionerne */
+}
+
+.email {
+    margin-top: 10px; /* Margin for email */
+    margin-bottom: 0; /* Ingen bundmargin */
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin: 20px;
+}
+
+.social-icons img {
+    width: 70px;
+    height: 70px;
+    margin: 0 20px;
+}
+
+.contact-info {
+    display: flex; /* Brug flexbox til at arrangere elementerne i en række */
+    justify-content: center; /* Centrerer elementerne horisontalt */
+}
+
+.contact-item {
+    display: flex; /* Brug flexbox */
+    flex-direction: column; /* Arrangerer billedet over teksten */
+    align-items: center; /* Centrerer elementerne horisontalt */
+    justify-content: center; /* Centrerer elementerne vertikalt */
+    margin: 0 20px; /* Tilføj lidt afstand mellem elementerne */
+}
+
+
