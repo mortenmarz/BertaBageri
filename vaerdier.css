@@ -42,7 +42,7 @@ h1 {
     margin: 0px auto; /* Reducer marginen for at bringe billedet tættere på h1 */
     width: 30%; /* Juster bredden efter behov */
     max-width: 600px; /* Sætter en maksimal bredde for billedet */
-    margin-top: -30px;
+    margin-top: -10px;
 }
 
 .title-container {
@@ -59,15 +59,15 @@ h1 {
 
 .biodiversity-image-2 {
     display: block; /* Gør billedet til en blok for at sikre, at det står alene */
-    margin-left: 150px;
+    margin-left: 100px;
     position: relative;
-    top: -80px;
+    top: -120px;
     width: 75%;
     margin-bottom: 20px;
 }
 
 .value-section {
-    margin-left: 20px; /* Adjust this value to move the section more to the right */
+    margin-left: 100px; /* Adjust this value to move the section more to the right */
 }
 
 .value-section p {
@@ -93,7 +93,7 @@ h1 {
 }
 
 .lokale-raavarer-section {
-    margin-left: 450px; /* Flytter sektionen 20 pixels til højre */
+    margin-left: 250px; /* Flytter sektionen 20 pixels til højre */
     margin-top: -100px; /* Flytter sektionen 20 pixels op */
 }
 
@@ -118,7 +118,7 @@ h1 {
     margin: 10px auto; /* Tilføjer afstand over og under billedet og centrerer det */
     position: relative; /* Gør det muligt at flytte billedet */
     right: 330px;
-    top: -30px; /* Flytter billedet 20 pixels op */
+    top: -10px; 
     width: 550px; /* Sætter en specifik bredde for at gøre det større */
     height: auto; /* Bevarer billedets proportioner */
 }
@@ -130,6 +130,7 @@ h1 {
 
 .content-section.reverse {
     direction: rtl;
+    margin-left: 100px; /* Adjust this value to move the section more to the right */
 }
 
 .content-section.reverse > * {
@@ -186,15 +187,16 @@ h1 {
 
 .tæt-på-råvarerne-section .text-content {
     flex: 1; /* Giver tekstindholdet plads til at fylde */
-    padding-right: 10px; /* Tilføjer lidt afstand til højre */
-    max-width: 500px;
+    max-width: 600px;
     margin: 0;
+    margin-left: 50px;
 }
 
 .tæt-på-råvarerne-section .single-image {
     flex: 1; /* Giver billedet plads til at fylde */
     display: flex; /* Aktiverer flexbox for billedet */
     justify-content: center; /* Centrerer billedet horisontalt */
+    margin-right: 150px;
 }
 
 .tæt-på-råvarerne-section .single-image img {
