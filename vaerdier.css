@@ -14,11 +14,9 @@
 body {
     background-color: var(--bertahvid);
     font-family: 'Lato', sans-serif;
-    line-height: 1.8;
-    letter-spacing: 0.05em;
 }
 
-h1, h2 {
+h2 {
     font-family: 'Caveat', cursive; /* Anvender Caveat skrifttypen */
     font-size: 36px; /* Juster størrelsen efter behov */
     margin: 20px 0; /* Juster marginen for at give plads omkring overskriften */
@@ -34,6 +32,7 @@ h1 {
     color: var(--blå); /* Juster farven, hvis nødvendigt */
     font-weight: 400;
     margin-top: 100px;
+    letter-spacing: 0.2em;
 }
 
 
@@ -293,12 +292,14 @@ footer h3 {
     opacity: 1;
 }
 
-/* Navigation */
+/* Navbar */
+
 .navbar {
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
     padding: 10px 20px; 
+    padding-left: 50px;
     background-color: transparent; 
     width: 100%; 
     position: relative; 
@@ -326,7 +327,7 @@ footer h3 {
     color: var(--blå); 
     text-decoration: none; 
     font-size: 36px; 
-    font-family: Caveat, 'cursive';
+    font-family: Caveat, cursive; 
     font-weight: 100; 
 }
 
