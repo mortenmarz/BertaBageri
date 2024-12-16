@@ -113,7 +113,7 @@ body {
 .hero-title {
     font-family: var(--font-heading);
     font-weight: 400;
-    font-size: 93px;
+    font-size: 70px;
     letter-spacing: 18.60px;
     line-height: 139.5px;
     color: var(--primary-color);
@@ -172,6 +172,7 @@ body {
     font-size: 48px;
     font-weight: 100;
     color: var(--primary-color);
+   
     
     
 }
@@ -663,16 +664,16 @@ body {
 
 .scroll-to-top {
     position: fixed; 
-    bottom: 20px; 
+    bottom: 60px; 
     right: 20px; 
-    display: none; 
-    z-index: 1; 
+    display: none;
+    z-index: 1000;
 }
 
 .scroll-to-top-image {
     width: 50px; 
     height: auto; 
-    border: none; 
+    border: none;
     cursor: pointer; 
 }
 
@@ -756,8 +757,16 @@ footer h3 {
 }
 
 
+/* fade in css til script */
 
 
+.fade {
+    opacity: 0; 
+    transition: opacity 0.5s ease-in-out; 
+}
 
+.fade.visible {
+    opacity: 1; 
+}
 
 

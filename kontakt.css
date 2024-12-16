@@ -1,0 +1,261 @@
+:root {
+    --primary-color: #31498F;
+    --background-color: #FFFDF2;
+    --text-color: #000000;
+    --font-heading: 'Caveat', Helvetica;
+    --font-body: 'Lato', Helvetica;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+
+/* Navbar */
+
+.navbar {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px 20px; 
+    background-color: transparent; 
+    width: 100%; 
+    position: relative; 
+    margin-top: 20px; 
+}
+
+.navbar-left {
+    display: flex; 
+}
+
+.navbar-menu {
+    list-style: none; 
+    display: flex; 
+    margin: 0; 
+    padding: 0; 
+    position: relative; 
+}
+
+.navbar-item {
+    margin-right: 100px; 
+    position: relative; 
+}
+
+.navbar-item a {
+    color: var(--primary-color); 
+    text-decoration: none; 
+    font-size: 36px; 
+    font-family: var(--font-heading); 
+    font-weight: 100; 
+}
+
+.nav-item::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 200px; 
+    height: 220px; 
+    background-image: url('/images/Frame 5.png'); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.3s ease;
+    pointer-events: none; 
+}
+
+.nav-item:hover::before {
+    transform: translate(-50%, -50%) scale(1); 
+}
+
+.navbar-item a:hover {
+    text-decoration: none; 
+    font-weight: 600;
+}
+
+.navbar-right {
+    margin-left: auto; 
+    display: flex; 
+}
+
+.navbar-logo {
+    height: 50px; 
+    width: auto; 
+}
+
+
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    padding: 20px;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Justér dette tal for at ændre mellemrummet mellem billederne */
+    align-items: center;
+}
+
+.center-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.phone-number {
+    font-size: 24px;
+    color: #333;
+    margin-top: 15px;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+.contact-text {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    color: var(--text-color);
+    text-align: center;
+    margin-top: 10px;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.extra-space {
+    margin-top: 50px; /* Justér dette tal for at ændre mellemrummet før det sidste billede */
+}
+
+.email-address {
+    font-size: 24px;
+    color: #333;
+    margin-top: 15px;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+
+.contact-text {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.social-container {
+    display: flex;
+    justify-content: center;
+    gap: 100px; /* Justér dette tal for at ændre mellemrummet mellem billederne */
+    margin-top: 30px;
+}
+
+.social-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-image {
+    width: 50px; /* Justér størrelsen efter behov */
+    height: auto;
+}
+
+.social-text {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+/* footer */
+
+footer {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: rgba(239, 243, 255, 0.4);
+    margin-top: 140px;
+    font-family: 'Caveat', Cursive;
+    font-size: 24px;
+    font-weight: 300;
+    width: 100%;
+    letter-spacing: 0.1em;  
+    line-height: 25px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    letter-spacing: 0.1em;  
+    line-height: 1.6;
+}
+
+
+.footer-section {
+    text-align: left;
+}
+
+footer h3 {
+    letter-spacing: 0.05em;
+}
+.contact-title {
+    text-align: center; /* Centerer titlen */
+}
+
+.follow-title {
+    text-align: center; /* Centerer titlen */
+}
+
+.contact-icon {
+    width: 120px; /* Fast bredde for ikoner */
+    height: auto; /* Bevarer proportionerne */
+}
+
+.email {
+    margin-top: 10px; /* Margin for email */
+    margin-bottom: 0; /* Ingen bundmargin */
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin: 20px;
+}
+
+.social-icons img {
+    width: 70px;
+    height: 70px;
+    margin: 0 20px;
+}
+
+.contact-info {
+    display: flex; /* Brug flexbox til at arrangere elementerne i en række */
+    justify-content: center; /* Centrerer elementerne horisontalt */
+}
+
+.contact-item {
+    display: flex; /* Brug flexbox */
+    flex-direction: column; /* Arrangerer billedet over teksten */
+    align-items: center; /* Centrerer elementerne horisontalt */
+    justify-content: center; /* Centrerer elementerne vertikalt */
+    margin: 0 20px; /* Tilføj lidt afstand mellem elementerne */
+}
