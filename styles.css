@@ -209,17 +209,3 @@ footer h3 {
 .fade.visible {
     opacity: 1;
 }
-
-
-/* Det er til toppen knappen */ 
-
-#topBtn {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 50px;
-    cursor: pointer;
-}
-  
-  
