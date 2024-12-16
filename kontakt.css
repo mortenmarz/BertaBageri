@@ -2,8 +2,8 @@
     --primary-color: #31498F;
     --background-color: #FFFDF2;
     --text-color: #000000;
-    --font-heading: 'Caveat', Helvetica;
-    --font-body: 'Lato', Helvetica;
+    --font-heading: 'Caveat', sans-serif;
+    --font-body: 'Lato', sans-serif;
 }
 
 * {
@@ -173,8 +173,13 @@ body {
 }
 
 .social-image {
-    width: 50px; /* Justér størrelsen efter behov */
+    width: 70px;  /* Basis størrelse for Facebook-ikonet */
     height: auto;
+}
+
+/* Specifik justering for Instagram-ikonet */
+img[src*="igikon"] {
+    width: 120px;  /* Øget med 50px */
 }
 
 .social-text {
@@ -198,6 +203,7 @@ footer {
     width: 100%;
     letter-spacing: 0.1em;  
     line-height: 25px;
+    color: #31498F;
 }
 
 .footer-content {
@@ -259,3 +265,27 @@ footer h3 {
     justify-content: center; /* Centrerer elementerne vertikalt */
     margin: 0 20px; /* Tilføj lidt afstand mellem elementerne */
 }
+
+/* fade in css til script */
+
+
+.fade {
+    opacity: 0; 
+    transition: opacity 0.5s ease-in-out; 
+}
+
+.fade.visible {
+    opacity: 1; 
+}
+
+.caveat-font {
+    font-family: 'Caveat', cursive;
+    font-size: 44px;
+}
+
+#adresse-text {
+    font-family: 'Caveat', cursive;
+    font-size: 44px;
+    color: #31498F;
+}
+
