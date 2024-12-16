@@ -662,22 +662,22 @@ body {
 /* til top script knap */
 
 .scroll-to-top {
-    position: fixed; 
-    bottom: 20px; 
-    right: 20px; 
-    display: none; 
-    z-index: 1; 
+    position: fixed; /* Fix the button to the viewport */
+    bottom: 60px; /* Adjust this value to position it just above the footer */
+    right: 20px; /* Position it 20px from the right */
+    display: none; /* Initially hidden */
+    z-index: 1000; /* Ensure it appears above other content */
 }
 
 .scroll-to-top-image {
-    width: 50px; 
-    height: auto; 
-    border: none; 
-    cursor: pointer; 
+    width: 50px; /* Set the width of the image */
+    height: auto; /* Maintain aspect ratio */
+    border: none; /* Remove border */
+    cursor: pointer; /* Change cursor to pointer on hover */
 }
 
 .scroll-to-top:hover {
-    opacity: 0.8; 
+    opacity: 0.8; /* Optional: Change opacity on hover for effect */
 }
 
 /* footer */
@@ -758,6 +758,13 @@ footer h3 {
 
 
 
+.fade {
+    opacity: 0; /* Start hidden */
+    transition: opacity 0.5s ease-in-out; /* Transition effect */
+}
 
+.fade.visible {
+    opacity: 1; /* Fully visible when the class is added */
+}
 
 
