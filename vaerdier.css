@@ -33,36 +33,14 @@ h1 {
     text-align: center; /* Centrerer teksten horisontalt */
     margin: 0; /* Ingen margin for h1 for at bringe det tættere på divider */
     font-family: 'Caveat', cursive; /* Anvender Caveat skrifttypen */
-    font-size: 54px; /* Juster størrelsen efter behov */
+    font-size: 70px; /* Juster størrelsen efter behov */
     color: var(--blå); /* Juster farven, hvis nødvendigt */
     font-weight: 400;
+    margin-top: 100px;
 }
 
-/* Navigation */
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0;
-}
 
-.nav-links {
-    display: flex;
-    gap: 30px;
-}
-
-.nav-links a {
-    color: #1a365d;
-    text-decoration: none;
-    font-size: 1.1rem;
-}
-
-.logo {
-    font-size: 1.5rem;
-    text-decoration: none;
-}
-
-/* Content Sections */
+/* Indholds sektionerne */
 .divider {
     display: block; /* Gør billedet til en blok for at sikre, at det står alene */
     margin: 0px auto; /* Reducer marginen for at bringe billedet tættere på h1 */
@@ -235,4 +213,158 @@ nav {
 
 .blomster img {
     max-width: 500px;
+}
+
+/* Footer */
+footer {
+    width: 100%; /* Sørger for, at footeren strækker sig til 100% */
+    padding: 40px 0px; /* Behold padding for indholdet */
+    text-align: center;
+    background-color: rgba(239, 243, 255, 0.4);
+    margin: 0; /* Fjern margin */
+    font-family: 'Caveat', cursive;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0; /* Fjern margin */
+    padding: 0; /* Fjern padding hvis nødvendigt */
+}
+
+.footer-section {
+    text-align: left;
+}
+
+footer h3 {
+    letter-spacing: 0.05em;
+}
+
+.contact-title {
+    text-align: center; /* Centerer titlen */
+}
+
+.follow-title {
+    text-align: center; /* Centerer titlen */
+}
+
+.contact-icon {
+    width: 120px; /* Fast bredde for ikoner */
+    height: auto; /* Bevarer proportionerne */
+}
+
+.email {
+    margin-top: 10px; /* Margin for email */
+    margin-bottom: 0; /* Ingen bundmargin */
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin: 20px;
+}
+
+.social-icons img {
+    width: 70px;
+    height: 70px;
+    margin: 0 20px;
+}
+
+.contact-info {
+    display: flex; /* Brug flexbox til at arrangere elementerne i en række */
+    justify-content: center; /* Centrerer elementerne horisontalt */
+}
+
+.contact-item {
+    display: flex; /* Brug flexbox */
+    flex-direction: column; /* Arrangerer billedet over teksten */
+    align-items: center; /* Centrerer elementerne horisontalt */
+    justify-content: center; /* Centrerer elementerne vertikalt */
+    margin: 0 20px; /* Tilføj lidt afstand mellem elementerne */
+}
+
+/* Fade ind effekt */
+
+.fade {
+    opacity: 0;
+    transition: opacity 0.7s ease-in;
+}
+
+.fade.visible {
+    opacity: 1;
+}
+
+/* Navigation */
+.navbar {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px 20px; 
+    background-color: transparent; 
+    width: 100%; 
+    position: relative; 
+    margin-top: 20px; 
+}
+
+.navbar-left {
+    display: flex; 
+}
+
+.navbar-menu {
+    list-style: none; 
+    display: flex; 
+    margin: 0; 
+    padding: 0; 
+    position: relative; 
+}
+
+.navbar-item {
+    margin-right: 100px; 
+    position: relative; 
+}
+
+.navbar-item a {
+    color: var(--blå); 
+    text-decoration: none; 
+    font-size: 36px; 
+    font-family: Caveat, 'cursive';
+    font-weight: 100; 
+}
+
+.nav-item::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 200px; 
+    height: 220px; 
+    background-image: url('/images/Frame 5.png'); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.3s ease;
+    pointer-events: none; 
+}
+
+.nav-item:hover::before {
+    transform: translate(-50%, -50%) scale(1); 
+}
+
+.navbar-item a:hover {
+    text-decoration: none; 
+    font-weight: 600;
+}
+
+.navbar-right {
+    margin-left: auto; 
+    display: flex; 
+}
+
+.navbar-logo {
+    height: 50px; 
+    width: auto; 
 }
