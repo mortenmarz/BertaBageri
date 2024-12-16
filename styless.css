@@ -113,7 +113,7 @@ body {
 .hero-title {
     font-family: var(--font-heading);
     font-weight: 400;
-    font-size: 93px;
+    font-size: 70px;
     letter-spacing: 18.60px;
     line-height: 139.5px;
     color: var(--primary-color);
@@ -172,6 +172,7 @@ body {
     font-size: 48px;
     font-weight: 100;
     color: var(--primary-color);
+   
     
     
 }
@@ -662,22 +663,22 @@ body {
 /* til top script knap */
 
 .scroll-to-top {
-    position: fixed; /* Fix the button to the viewport */
-    bottom: 60px; /* Adjust this value to position it just above the footer */
-    right: 20px; /* Position it 20px from the right */
-    display: none; /* Initially hidden */
-    z-index: 1000; /* Ensure it appears above other content */
+    position: fixed; 
+    bottom: 60px; 
+    right: 20px; 
+    display: none;
+    z-index: 1000;
 }
 
 .scroll-to-top-image {
-    width: 50px; /* Set the width of the image */
-    height: auto; /* Maintain aspect ratio */
-    border: none; /* Remove border */
-    cursor: pointer; /* Change cursor to pointer on hover */
+    width: 50px; 
+    height: auto; 
+    border: none;
+    cursor: pointer; 
 }
 
 .scroll-to-top:hover {
-    opacity: 0.8; /* Optional: Change opacity on hover for effect */
+    opacity: 0.8; 
 }
 
 /* footer */
@@ -756,15 +757,16 @@ footer h3 {
 }
 
 
+/* fade in css til script */
 
 
 .fade {
-    opacity: 0; /* Start hidden */
-    transition: opacity 0.5s ease-in-out; /* Transition effect */
+    opacity: 0; 
+    transition: opacity 0.5s ease-in-out; 
 }
 
 .fade.visible {
-    opacity: 1; /* Fully visible when the class is added */
+    opacity: 1; 
 }
 
 
