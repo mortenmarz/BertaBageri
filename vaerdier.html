@@ -10,14 +10,21 @@
 </head>
 </head>
 <body>
-    <nav>
-        <div class="nav-links">
-            <a href="index.html">Bagværk</a>
-            <a href="om-os.html">Om os</a>
-            <a href="vaerdier.html">Værdier</a>
-            <a href="kontakt.html">Kontakt</a>
+
+    <nav class="navbar">
+        <div class="navbar-left">
+            <ul class="navbar-menu">
+                <li class="navbar-item nav-item"><a href="bagvaerk.html">Bagværk</a></li>
+                <li class="navbar-item nav-item"><a href="om-os.html">Om os</a></li>
+                <li class="navbar-item nav-item"><a href="vaerdier.html">Værdier</a></li>
+                <li class="navbar-item nav-item"><a href="kontakt.html">Kontakt</a></li>
+            </ul>
         </div>
-        <a href="index.html" class="logo">berta</a>
+        <div class="navbar-right">
+            <a href="index.html">
+            <img src="/images/bertalogo.png" alt="Berta Logo" class="navbar-logo"> 
+        </a>
+        </div>
     </nav>
 
     <div class="title-container">
@@ -33,7 +40,7 @@
         <img src="images/værdi2rigtig.png" alt="Bæredygtighed billede" class="biodiversity-image-2">
     </section>
 
-    <section class="content-section reverse">
+    <section class="content-section reverse fade">
         <div class="text-content">
             <h2>Økologi</h2>
             <p>Hos Berta bager vi surdejsbrød og kager med fokus på kvalitet og bæredygtighed. Råvarerne er nøje udvalgt fra mindre danske økologiske gårde og producenter, hvilket sikrer friskbagt brød hver morgen og sæsonskiftende varer.</p>
@@ -44,17 +51,17 @@
         </div>    
     </section>
 
-    <section class="content-section lokale-raavarer-section">
+    <section class="content-section lokale-raavarer-section fade">
         <div class="text-content">
             <div class="text-container">
                 <h2>Lokale råvarer</h2>
                 <p>Hos Berta Bageri bruger vi kun lokale, danske råvarer for at sikre den bedste kvalitet og støtte vores nærmiljø. Vores surdejsbrød bages med økologisk mel fra Kornby Mølle, og vores kager laves med friske ingredienser fra små, danske producenter. Hvert bagværk er lavet med fokus på godt dansk håndværk og de lokale råvarer, vi bruger.</p>
             </div>
-            <img src="images/værdillustration3.png" alt="Bage illustrationer" class="lokale-illustration">
+            <img src="images/værdillustration3.png" alt="Økologisk bageri illustrationer" class="lokale-illustration">
         </div>
     </section>
 
-    <section class="content-section tæt-på-råvarerne-section">
+    <section class="content-section tæt-på-råvarerne-section fade">
         <div class="text-content">
             <h2>Tæt på råvarerne</h2>
             <p>Vores Mariagertoba hvedemel, dyrket på markerne ved Trige Vestermølle og malet på stenkværn af Gl. Buurholt, leveres som både sigtet og fuldkornsmel – nænsomt passet af Carsten Rønde. Fra Bornholm får vi valset mel af højeste kvalitet. Vi får vores fantastiske vaniljestænger fra Henning, der driver en økologisk vaniljefarm på Madagaskar. De marinerede jordbær kommer fra Yduns Have på Samsø, hvor bærrene dyrkes med kærlighed.</p>
@@ -65,11 +72,13 @@
         </div>
     </section>
 
-    <div class="blomster">
+    <div class="blomster fade">
         <img src="images/værdillustration5.png" alt="Illustration af blomster og hund">
     </div>
 
-    <footer class="footer"></footer>
+    <script src="js.js"></script>
+
+    <footer class="footer fade">
         <div class="footer-content">
             <div class="footer-section">
                 <h3>Åbent alle dage fra</h3>
@@ -98,7 +107,6 @@
                 </div>
             </div>
         </div>
-        <script src="js.js"></script>
     </footer>
 </body>
 </html>
