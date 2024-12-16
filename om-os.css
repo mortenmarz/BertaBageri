@@ -7,10 +7,85 @@ body {
 
 }
 
+
+/* Footer */ 
+.navbar {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px 20px; 
+    background-color: transparent; 
+    width: 100%; 
+    position: relative; 
+    margin-top: 20px; 
+}
+
+.navbar-left {
+    display: flex; 
+}
+
+.navbar-menu {
+    list-style: none; 
+    display: flex; 
+    margin: 0; 
+    padding: 0; 
+    position: relative; 
+}
+
+.navbar-item {
+    margin-right: 100px; 
+    position: relative; 
+}
+
+.navbar-item a {
+    color: #31498F;
+    text-decoration: none; 
+    font-size: 36px; 
+    font-family: 'Caveat';
+    font-weight: 100; 
+}
+
+.nav-item::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 200px; 
+    height: 220px; 
+    background-image: url('/images/Frame 5.png'); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.3s ease;
+    pointer-events: none; 
+}
+
+.nav-item:hover::before {
+    transform: translate(-50%, -50%) scale(1); 
+}
+
+.navbar-item a:hover {
+    text-decoration: none; 
+    font-weight: 600;
+}
+
+.navbar-right {
+    margin-left: auto; 
+    display: flex; 
+}
+
+.navbar-logo {
+    height: 50px; 
+    width: auto; 
+}
+
+
+
 .OmBerta {
  font-family: 'Caveat';
  color: #31498F;
- font-size:300%
+ font-size:70px
 
 }
 
@@ -18,14 +93,15 @@ h2 {
     font-family:'Caveat';
     color: #31498F;
     text-align: left;
-    font-size: 200%;
-    letter-spacing: 0.2cm;
+    font-size: 48px;
+    letter-spacing: 0.1em;
 }
 
 p {
     font-family: 'Lato';
-    letter-spacing: 0.05cm;
+    letter-spacing: 0.05em;
     text-align: left;
+    font-size: 18px;
 }
 
 .logo {
@@ -39,6 +115,13 @@ main {
     padding: 2rem;
 }
 
+.billede-om-os {
+    width: 600px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .image-container {
     display: flex;
@@ -62,7 +145,43 @@ figcaption {
     margin-top: 10px;
 }
 
+.bagerhund{
+    width: 300px; /* or whatever size you prefer */
+    height: auto; /* maintains aspect ratio */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+.about{
+    max-width: 1000px;
+    margin-left: 60px; 
+    padding-left: 0;
+    text-align: left;
+}
+
+.history {
+    max-width: 1000px;
+    margin-left: 60px; 
+    padding-left: 0;
+    text-align: left;
+}
+
+.selvbetjening {
+    max-width: 1000px;
+    margin-left: 60px; 
+    padding-left: 0;
+    text-align: left;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
 
 /* Footer */ 
 footer {
@@ -133,3 +252,35 @@ footer h3 {
     margin: 0 20px; /* Tilføj lidt afstand mellem elementerne */
 }
 
+
+/* Pil op */
+.scroll-to-top {
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px; 
+    display: none; 
+    z-index: 1; 
+}
+
+.scroll-to-top-image {
+    width: 50px; 
+    height: auto; 
+    border: none; 
+    cursor: pointer; 
+}
+
+.scroll-to-top:hover {
+    opacity: 0.8; 
+}
+
+
+/* Fade ind effekt */
+
+.fade {
+    opacity: 0;
+    transition: opacity 0.7s ease-in;
+}
+
+.fade.visible {
+    opacity: 1;
+}

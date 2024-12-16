@@ -5,10 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Berta - Økologisk Surdejsbageri</title>
     <link rel="stylesheet" href="om-os.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Lato&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <nav class="navbar">
+        <div class="navbar-left">
+            <ul class="navbar-menu">
+                <li class="navbar-item nav-item"><a href="bagvaerk.html">Bagværk</a></li>
+                <li class="navbar-item nav-item"><a href="om-os.html">Om os</a></li>
+                <li class="navbar-item nav-item"><a href="vaerdier.html">Værdier</a></li>
+                <li class="navbar-item nav-item"><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <a href="index.html">
+            <img src="/images/bertalogo.png" alt="Logo" class="navbar-logo"> 
+        </a>
+        </div>
+    </nav>
 
     <main>
         <div class="logo">
@@ -16,46 +33,36 @@
             <h1 class="OmBerta">Om os</h1>
         </div>
 
-        <section class="about">
+        <section class="about fade">
             <h2>Berta, et økologisk surdejsbageri</h2>
             <p>Vi er et økologisk surdejsbageri, der ligger i hjertet af Aarhus C.</p>
             <p>Som moderne håndværksbager sætter vi en ære i at bruge danske, lokale råvarer med bæredygtighed som en naturlig del af alt, hvad vi laver. Hos Berta har vi en uformel og indbydende atmosfære inspireret af stemningen hos de gamle gårdbutikker.</p>
         </section>
 
-        <section class="history">
+        <br><br>
+
+        <section class="history fade">
             <h2>Historien bag bageren nede på hjørnet</h2>
             <p>Vores bageri blev grundlagt i 2022 af René Hansen, manden bag Retour og BAMBi eatery & bakery. Siden vi første gang åbnede dørene har vi haft vokseværk og flyttede fra små lokaler til nye, store og lyse lokaler på Lundings Torv i Aarhus C.</p>
-            </section>
-            
-            <div class="image-container">
-                <div class="founder-images">
-                    <img src="images/berte-rene.png" alt="René Hansen, grundlæggeren af Berta" class="founder-main">
-                    <figcaption>René Hansen, grundlæggeren af Berta</figcaption>
-                </div>
+        </section>
 
-                
-                <div class="store-images">
-                    <div class="store-image">
-                        <img src="images/storefront.png" alt="Den første lille butik på Frederiks Allé">
-                        <figcaption>Den første lille butik på Frederiks Allé.</figcaption>
-                    </div>
-                    
-                    <div class="store-image">
-                        <img src="images/storefront-2.png" alt="Den nye butik med store, lyse lokaler på Lundings Torv">
-                        <figcaption>Den nye butik med store, lyse lokaler på Lundings Torv.</figcaption>
-                    </div>
-                </div>
-            </div>
+         <img src="images/billede-om-os.png" class="billede-om-os">
 
-
-        <section class="self-service">
+         <section class="selvbetjening fade">
             <h2>Selvbetjening - så bliver det ikke lettere</h2>
             <p>Hos Berta er der selvbetjening for at gøre købsoplevelsen så let som mulig. Du vælger selv dit bagværk og kan herefter nemt betale med Mobilepay. Har du brug for det, står vores personale altid klar til at hjælpe med et smil.</p>
-            <div style="text-align: center;">
-                <img src="images/hund-3.png"> 
-            </div>
         </section>
+        <img src="images/hund-3.png" class="bagerhund">
     </main>
+
+    <section>
+        <a href="#" class="scroll-to-top" id="scrollToTopBtn">
+            <img src="/images/pilop.png" alt="Scroll to Top" class="scroll-to-top-image"> 
+            </a>
+        </section>
+
+        <script src="js.js"></script>
+
 
     <footer class="fade footer">
         <div class="footer-content">
@@ -81,13 +88,11 @@
             <div class="footer-section">
                 <h3 class="follow-title">Følg med</h3>
                 <div class="social-icons">
-                    <a href="#"><img src="images/fbikon.png" alt="Facebook"></a>
-                    <a href="#"><img src="images/igikon.png" alt="Instagram"></a>
+                    <a href="https://www.facebook.com/Berta.bageri"><img src="images/fbikon.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/berta.bageri/"><img src="images/igikon.png" alt="Instagram"></a>
                 </div>
             </div>
         </div>
-        <script src="js.js"></script>
     </footer>
-
 </body>
 </html>
