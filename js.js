@@ -22,11 +22,12 @@ window.onscroll = function() {
     const documentHeight = document.documentElement.scrollHeight; 
 
     
-    if (scrollPosition > documentHeight * 0.6) {
+    if (scrollPosition > documentHeight * 0.5) {
         scrollToTopBtn.style.display = 'block'; 
     } else {
         scrollToTopBtn.style.display = 'none'; 
     }
+
 };
 
 scrollToTopBtn.onclick = function(event) {
