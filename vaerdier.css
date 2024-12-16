@@ -16,9 +16,6 @@ body {
     font-family: 'Lato', sans-serif;
     line-height: 1.8;
     letter-spacing: 0.05em;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
 }
 
 h1, h2 {
@@ -218,11 +215,10 @@ h1 {
 
 /* Footer */
 footer {
-    width: 100vw; /* Sørger for, at footeren strækker sig over hele viewport bredden */
-    margin: 0; /* Fjerner al margin */
-    padding: 40px 0px; /* Behold padding for indholdet */
+    padding: 40px 20px;
     text-align: center;
     background-color: rgba(239, 243, 255, 0.4);
+    margin-top: 140px;
     font-family: 'Caveat', cursive;
     font-size: 24px;
     font-weight: 300;
@@ -232,8 +228,7 @@ footer {
     display: flex;
     justify-content: space-between;
     max-width: 1200px;
-    margin: 0; /* Fjern margin */
-    padding: 0; /* Fjern padding hvis nødvendigt */
+    margin: 0 auto;
 }
 
 .footer-section {
