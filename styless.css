@@ -756,15 +756,16 @@ footer h3 {
 }
 
 
+/* fade in css til script */
 
 
 .fade {
-    opacity: 0; /* Start hidden */
-    transition: opacity 0.5s ease-in-out; /* Transition effect */
+    opacity: 0; 
+    transition: opacity 0.5s ease-in-out; 
 }
 
 .fade.visible {
-    opacity: 1; /* Fully visible when the class is added */
+    opacity: 1; 
 }
 
 
