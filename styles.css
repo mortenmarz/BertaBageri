@@ -209,3 +209,20 @@ footer h3 {
 .fade.visible {
     opacity: 1;
 }
+
+/* Pil ned effekt */
+
+.scroll-arrow {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 75px; 
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.scroll-arrow:hover {
+    transform: translateX(-50%) scale(1.1);
+}
+

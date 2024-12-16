@@ -1,3 +1,10 @@
+/* Pil der scroller ned på midten af forsiden */
+
+document.getElementById("scroll-arrow").onclick = function () {
+    document.querySelector(".logo-section").scrollIntoView({ behavior: "smooth", block: "center" });
+};
+
+
 /* Fade ind effekt */
 
 window.addEventListener('scroll', function() {
@@ -39,3 +46,6 @@ scrollToTopBtn.onclick = function(event) {
 };
 
 scrollToTopBtn.style.display = 'none';
+
+
+
