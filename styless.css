@@ -19,6 +19,7 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100%;
+
 }
 
 
@@ -173,7 +174,6 @@ body {
     font-weight: 100;
     color: var(--primary-color);
    
-    
     
 }
 
@@ -660,7 +660,7 @@ body {
 
 
 
-/* til top script knap */
+/* til top script pil */
 
 .scroll-to-top {
     position: fixed; 
