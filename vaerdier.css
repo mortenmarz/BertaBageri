@@ -1,8 +1,7 @@
-/* Værdier css */
-
+/* Base styles */
 :root {
-    --blå: #31498F; /* Definerer farvevariablen for blå */
-    --bertahvid: #FFFDF2; /* Definerer farvevariablen for bertahvid */
+    --blå: #31498F;
+    --bertahvid: #FFFDF2;
 }
 
 * {
@@ -13,289 +12,42 @@
 
 body {
     background-color: var(--bertahvid);
-    font-family: 'Lato', sans-serif;
 }
 
-h2 {
-    font-family: 'Caveat', cursive; /* Anvender Caveat skrifttypen */
-    font-size: 36px; /* Juster størrelsen efter behov */
-    margin: 20px 0; /* Juster marginen for at give plads omkring overskriften */
-    color: var(--blå); /* Juster farven, hvis nødvendigt */
-    letter-spacing: 0.2em;
+.samlet { 
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 30px;
 }
 
+/* Typografi */
 h1 {
-    text-align: center; /* Centrerer teksten horisontalt */
-    margin: 0; /* Ingen margin for h1 for at bringe det tættere på divider */
-    font-family: 'Caveat', cursive; /* Anvender Caveat skrifttypen */
-    font-size: 70px; /* Juster størrelsen efter behov */
-    color: var(--blå); /* Juster farven, hvis nødvendigt */
+    font-family: 'Caveat', cursive;
+    font-size: 90px;
+    color: var(--blå);
     font-weight: 400;
+    text-align: center;
     margin-top: 100px;
     letter-spacing: 0.2em;
 }
 
-
-/* Indholds sektionerne */
-.divider {
-    display: block; /* Gør billedet til en blok for at sikre, at det står alene */
-    margin: 0px auto; /* Reducer marginen for at bringe billedet tættere på h1 */
-    width: 30%; /* Juster bredden efter behov */
-    max-width: 600px; /* Sætter en maksimal bredde for billedet */
-    margin-top: -10px;
-}
-
-.title-container {
-    text-align: center; /* Centrerer indholdet */
-    margin: 50px 0 100px; /* Ingen margin foroven, 20px nedenunder for afstand til content-section */
-}
-
-.biodiversity-image {
-    float: left; /* Placerer billedet til venstre */
-    margin-right: 80px; /* Tilføjer afstand til højre for at give plads til teksten */
-    width: 500px; /* Juster bredden for at gøre billedet større */
-    height: auto; /* Bevarer proportionerne */
-}
-
-.biodiversity-image-2 {
-    display: block; /* Gør billedet til en blok for at sikre, at det står alene */
-    margin-left: 100px;
-    position: relative;
-    top: -120px;
-    width: 75%;
+h2 {
+    font-family: 'Caveat', cursive;
+    font-size: 48px;
+    color: var(--blå);
+    letter-spacing: 0.2em;
     margin-bottom: 20px;
 }
 
-.value-section {
-    margin-left: 100px; /* Adjust this value to move the section more to the right */
-}
-
-.value-section p {
-    max-width: 900px; /* Juster denne værdi for at ændre linjelængden */
-    margin: 0 auto; /* Centrerer teksten, hvis der er plads */
-    line-height: 1.8; 
-    font-size: 16px;
-}
-
-.mel {
-    display: inline-block; /* Gør det muligt at justere billedet */
-    width: 350px; /* Juster bredden efter behov */
-    height: auto; /* Bevarer proportionerne */
-    margin-top: -200px;
-}
-
-.værdi4 {
-    max-width: 400px; /* Gør billedet mindre */
-    position: relative; /* Gør det muligt at flytte det */
-    left: 20px; /* Flytter billedet 100px til højre */
-    margin-top: -120px; /* Top: -120px */
-    margin-bottom: 40px; /* Bund: 40px */
-}
-
-.lokale-raavarer-section {
-    margin-left: 250px; /* Flytter sektionen 20 pixels til højre */
-    margin-top: -100px; /* Flytter sektionen 20 pixels op */
-}
-
-.lokale-raavarer-section .text-content {
-    display: flex; /* Aktiverer flexbox */
-    flex-direction: column; /* Gør det muligt at stable elementer i kolonner */
-    align-items: flex-start; /* Justerer indholdet til venstre */
-    max-width: 500px; /* Juster max-width for at samle teksten */
-    margin: 0 auto; /* Centrerer indholdet */
-    padding: 0 20px; /* Tilføjer lidt padding til venstre og højre */
-}
-
-.lokale-raavarer-section .text-container {
-    display: flex; /* Aktiverer flexbox for h2 og p */
-    flex-direction: column; /* Stabler h2 og p vertikalt */
-    align-items: flex-start; /* Justerer h2 og p til venstre */
-    margin-top: 10px; /* Tilføjer afstand mellem text-container og illustration */
-}
-
-.lokale-raavarer-section .lokale-illustration {
-    display: block; /* Gør billedet til block for centrering */
-    margin: 10px auto; /* Tilføjer afstand over og under billedet og centrerer det */
-    position: relative; /* Gør det muligt at flytte billedet */
-    right: 330px;
-    top: -10px; 
-    width: 550px; /* Sætter en specifik bredde for at gøre det større */
-    height: auto; /* Bevarer billedets proportioner */
-}
-
-.image-container {
-    text-align: right; /* Justerer indholdet til højre */
-    margin-top: 10px; /* Tilføjer lidt afstand over billedet */
-}
-
-.content-section.reverse {
-    direction: rtl;
-    margin-left: 100px; /* Adjust this value to move the section more to the right */
-}
-
-.content-section.reverse > * {
-    direction: ltr;
-}
-
-.text-content {
-    padding: 20px;
-}
-
-.right-image {
-    display: inline-block; /* Gør billedet til inline-block for at kunne justere det */
-    margin-left: 310px; /* Juster afstand til venstre */
-    vertical-align: middle; /* Juster vertikal positionering */
-    width: 400px; /* Juster bredden efter behov */
-    height: auto; /* Bevarer proportionerne */
-    margin-top: -200px;
-}
-
-.text-content h2 {
-    color: var(--blå);
-    font-size: 1.8rem;
+p {
+    font-family: 'Lato', sans-serif;
     margin: 0;
-    padding-left: 10px;
-    margin-top: -150px;
-    margin-bottom: 15px;
-    font-size: 36px;
-}
-
-.text-content p {
-    margin: 10px 0; /* Juster margin for at samle teksten */
-    line-height: 1.8;
-    padding-left: 10px;
-    padding-right: 10px;
-    max-width: 550px;
-}
-
-.illustration {
-    max-width: 100px;
-    margin: 20px 0 20px 200px;
-}
-
-.single-image img {
-    width: 100%;
-    height: auto;
-}
-
-.tæt-på-råvarerne-section {
-    display: flex; /* Aktiverer flexbox */
-    align-items: center; /* Justerer indholdet vertikalt centreret */
-    margin-top: -20px; /* Moves the section 20 pixels up */
-    padding-top: 10px; /* Adjusts the top padding */
-}
-
-.tæt-på-råvarerne-section .text-content {
-    flex: 1; /* Giver tekstindholdet plads til at fylde */
-    max-width: 600px;
-    margin: 0;
-    margin-left: 50px;
-}
-
-.tæt-på-råvarerne-section .single-image {
-    flex: 1; /* Giver billedet plads til at fylde */
-    display: flex; /* Aktiverer flexbox for billedet */
-    justify-content: center; /* Centrerer billedet horisontalt */
-    margin-right: 150px;
-}
-
-.tæt-på-råvarerne-section .single-image img {
-    max-width: 450px; /* Gør billedet responsivt */
-    height: auto; /* Bevarer billedets proportioner */
-}
-
-/* Blomsterdekoration */
-.blomster {
-    text-align: center;
-    margin: 100px 0;
-}
-
-.blomster img {
-    max-width: 500px;
-}
-
-/* Footer */
-footer {
-    padding: 40px 20px;
-    text-align: center;
-    background-color: rgba(239, 243, 255, 0.4);
-    margin-top: 140px;
-    font-family: 'Caveat', cursive;
-    font-size: 24px;
-    font-weight: 300;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.footer-section {
-    text-align: left;
-}
-
-footer h3 {
+    line-height: 2;
+    font-size: 18px;
     letter-spacing: 0.05em;
 }
 
-.contact-title {
-    text-align: center; /* Centerer titlen */
-}
-
-.follow-title {
-    text-align: center; /* Centerer titlen */
-}
-
-.contact-icon {
-    width: 120px; /* Fast bredde for ikoner */
-    height: auto; /* Bevarer proportionerne */
-}
-
-.email {
-    margin-top: 10px; /* Margin for email */
-    margin-bottom: 0; /* Ingen bundmargin */
-}
-
-.social-icons {
-    display: flex;
-    gap: 10px;
-    margin: 20px;
-}
-
-.social-icons img {
-    width: 70px;
-    height: 70px;
-    margin: 0 20px;
-}
-
-.contact-info {
-    display: flex; /* Brug flexbox til at arrangere elementerne i en række */
-    justify-content: center; /* Centrerer elementerne horisontalt */
-}
-
-.contact-item {
-    display: flex; /* Brug flexbox */
-    flex-direction: column; /* Arrangerer billedet over teksten */
-    align-items: center; /* Centrerer elementerne horisontalt */
-    justify-content: center; /* Centrerer elementerne vertikalt */
-    margin: 0 20px; /* Tilføj lidt afstand mellem elementerne */
-}
-
-/* Fade ind effekt */
-
-.fade {
-    opacity: 0;
-    transition: opacity 0.7s ease-in;
-}
-
-.fade.visible {
-    opacity: 1;
-}
-
 /* Navbar */
-
 .navbar {
     display: flex; 
     justify-content: space-between; 
@@ -329,7 +81,7 @@ footer h3 {
     color: var(--blå); 
     text-decoration: none; 
     font-size: 36px; 
-    font-family: Caveat, cursive; 
+    font-family: Caveat, cursive;
     font-weight: 100; 
 }
 
@@ -368,23 +120,176 @@ footer h3 {
     width: auto; 
 }
 
-/* Pil til top script knap */
+/* Title Section */
+.title-container {
+    text-align: center;
+    margin: 50px 0 100px;
+}
 
+.divider {
+    width: 30%;
+    max-width: 600px;
+    margin-top: -10px;
+    margin-bottom: 50px;
+}
+
+/* Sektionerne */
+.value-section {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centrerer horisontalt */
+    gap: 80px;
+    margin: 30px 0;
+    padding: 0 30px;
+}
+
+.value-section.reverse {
+    flex-direction: row-reverse;
+}
+
+.text {
+    flex: 1;
+    max-width: 500px;
+}
+
+.text.bæredygtig {
+    margin-top: -80px;
+}
+
+.text.økologi {
+    margin-top: -300px; /* Juster værdien for at rykke sektionen højere op */
+}
+
+.text.tæt {
+    margin-top: -80px;
+}
+
+.text.lokal 
+ 
+
+/* Billeder */
+
+.image {
+    flex: 1;
+}
+
+.image img {
+    max-width: 1000px;
+    height: auto;
+}
+
+.værdi2 {
+    margin-left: 220px;
+    margin-top: -150px;
+}
+
+.mel {
+    margin-left: 50px;
+}
+
+.æg {
+    margin-top: -400px;
+    margin-right: 50px;
+}
+
+.udstyr {
+    margin-left: 800px;
+    margin-top: -50px;
+}
+
+
+/* Dekorative blomster */
+.blomster {
+    text-align: center;
+    margin: 100px 0;
+}
+
+.blomster img {
+    max-width: 600px;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(239, 243, 255, 0.4);
+    padding: 40px 0;
+    margin-top: 100px;
+    font-family: 'Caveat', cursive;
+    font-size: 24px;
+}
+
+footer p {
+    font-family: 'Caveat', cursive;
+    font-size: 24px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    text-align: center;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-icon {
+    width: 120px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.email {
+    margin-top: 10px; 
+    margin-bottom: 0; 
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.social-icons img {
+    width: 70px;
+    height: 70px;
+}
+
+/* Fade effekt */
+.fade {
+    opacity: 0;
+    transition: opacity 0.7s ease-in;
+}
+
+.fade.visible {
+    opacity: 1;
+}
+
+/* Scroll til top pil */
 .scroll-to-top {
-    position: fixed; 
-    bottom: 60px; 
-    right: 20px; 
+    position: fixed;
+    bottom: 60px;
+    right: 20px;
     display: none;
     z-index: 1000;
 }
 
 .scroll-to-top-image {
-    width: 50px; 
-    height: auto; 
-    border: none;
-    cursor: pointer; 
+    width: 50px;
+    height: auto;
+    cursor: pointer;
 }
 
-.scroll-to-top:hover {
-    opacity: 0.8; 
-}
