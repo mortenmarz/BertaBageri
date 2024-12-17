@@ -1,10 +1,3 @@
-/* Pil der scroller ned på midten af forsiden */
-
-document.getElementById("scroll-arrow").onclick = function () {
-    document.querySelector(".logo-section").scrollIntoView({ behavior: "smooth", block: "center" });
-};
-
-
 /* Fade ind effekt */
 
 window.addEventListener('scroll', function() {
@@ -18,6 +11,12 @@ window.addEventListener('scroll', function() {
         }
     });
 });
+
+/* Pil der scroller ned på midten af forsiden */
+
+document.getElementById("scroll-arrow").onclick = function () {
+    document.querySelector(".logo-section").scrollIntoView({ behavior: "smooth", block: "center" });
+};
 
 
 /* Knappen til top */ 
