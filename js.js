@@ -1,3 +1,30 @@
+// JavaScript code to update custom cursor position
+
+// Select the custom cursor element
+const customCursor = document.querySelector('.custom-cursor');
+
+let cursorX = 0;
+let cursorY = 0;
+
+// Update the cursor position as the mouse moves
+document.addEventListener('mousemove', (e) => {
+    cursorX = e.clientX;
+    cursorY = e.clientY;
+    updateCursorPosition();
+});
+
+function updateCursorPosition() {
+    customCursor.style.left = `${cursorX - 20}px`;
+    customCursor.style.top = `${cursorY - 20}px`;
+}
+
+// Prevent the cursor from changing on links
+document.querySelectorAll('a').forEach(link => {
+    link.style.cursor = 'none';
+});
+
+
+
 /* Fade ind effekt */
 
 window.addEventListener('scroll', function() {

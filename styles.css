@@ -14,6 +14,7 @@ body {
     background-color: var(--bertahvid);
     font-family: 'Lato', sans-serif;
     line-height: 1.6;
+    cursor: none;
 }
 
 /* Hero sektion */
@@ -224,5 +225,16 @@ footer h3 {
 
 .scroll-arrow:hover {
     transform: translateX(-50%) scale(1.1);
+}
+
+
+.custom-cursor {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    background-image: url('images/pil-mus.png');
+    background-size: cover;
+    pointer-events: none;
+    z-index: 1000;
 }
 
