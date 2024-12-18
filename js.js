@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    /* Custom cursor */
+    /* Hjemmelavet cursor effekt */
     const customCursor = document.querySelector('.custom-cursor');
     if (customCursor) {
         let cursorX = 0;
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
         };
     }
 
-    /* Knappen til top */
+    /* Pilen til top knap */
     const scrollToTopBtn = document.getElementById('scrollToTopBtn');
     if (scrollToTopBtn) {
         scrollToTopBtn.style.display = 'none';
