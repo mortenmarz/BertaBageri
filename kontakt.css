@@ -18,6 +18,7 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    cursor: none;
 }
 
 
@@ -288,5 +289,16 @@ footer h3 {
     font-family: 'Caveat', cursive;
     font-size: 44px;
     color: #31498F;
+}
+
+
+.custom-cursor {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    background-image: url('images/pil-mus.png');
+    background-size: cover;
+    pointer-events: none;
+    z-index: 1000;
 }
 

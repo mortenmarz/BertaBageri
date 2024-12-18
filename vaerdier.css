@@ -12,6 +12,7 @@
 
 body {
     background-color: var(--bertahvid);
+    cursor: none;
 }
 
 .samlet { 
@@ -311,5 +312,17 @@ footer h3 {
     width: 50px;
     height: auto;
     cursor: pointer;
+}
+
+
+
+.custom-cursor {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    background-image: url('images/pil-mus.png');
+    background-size: cover;
+    pointer-events: none;
+    z-index: 1000;
 }
 
